@@ -31,7 +31,7 @@ public class SortListDemo
 		list.stream().sorted().forEach(e->System.out.println(e));
 		
 		
-		System.out.println("============ReversOrdder=============");
+		System.out.println("============Harshad=============");
 
 		list.stream().sorted(Comparator.reverseOrder()).forEach(e->System.out.println(e));
 		
