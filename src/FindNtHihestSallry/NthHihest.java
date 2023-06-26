@@ -20,6 +20,10 @@ public class NthHihest
 		Double double1 = list.stream().map(e->e.getSallary())
 		.sorted(Comparator.reverseOrder()).distinct().skip(2).findFirst().get();
 		System.out.println(double1);
+		System.out.println("======");
+		
+		list.stream().map(e->e.getSallary()).sorted(Comparator.reverseOrder())
+		.distinct().limit(3).forEach(e->System.out.println(e));
 		
 		
 	}
